@@ -1,0 +1,20 @@
+
+> charity-donation-server@1.0.0 dev
+> nodemon server.js
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+🚀 Server running in development mode on port 5000
+❌ MongoDB connection failed: A0090000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `node server.js`[39m
+🚀 Server running in development mode on port 5000
+❌ MongoDB connection failed: DC360000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C^C

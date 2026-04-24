@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #14213d;
+  background: #fff7ed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Source Sans 3", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(249, 115, 22, 0.12), transparent 24%),
+    linear-gradient(180deg, #fff7ed 0%, #ffffff 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .input-field {
+    @apply w-full rounded-2xl border border-white/70 bg-white/80 px-4 py-3 text-base text-ink outline-none transition focus:border-ember focus:ring-2 focus:ring-ember/20;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center rounded-2xl bg-ink px-5 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center rounded-2xl border border-ink/15 bg-white px-5 py-3 font-semibold text-ink transition hover:border-ink/40 hover:bg-amber-50;
+  }
+
+  .panel {
+    @apply rounded-[28px] border border-white/70 bg-white/80 shadow-soft backdrop-blur;
+  }
+}
