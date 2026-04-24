@@ -23,7 +23,7 @@ app.use(helmet());                          // Sets secure HTTP headers
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://charity-management-system-three.vercel.app"
+    "https://charity-management-system-s7io.vercel.app"
   ],
   credentials: true
 }));
