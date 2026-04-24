@@ -21,8 +21,11 @@ const app = express();
 // ─── Security middleware ───────────────────────────────────────────────────
 app.use(helmet());                          // Sets secure HTTP headers
 app.use(cors({
-  origin: process.env.CLIENT_URL || "http://localhost:5173",
-  credentials: true,
+  origin: [
+    "http://localhost:5173",
+    "https://charity-management-system-three.vercel.app"
+  ],
+  credentials: true
 }));
 // Rate limiting — disabled in development so testing is never blocked
 if (process.env.NODE_ENV !== "development") {
